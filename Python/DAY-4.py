@@ -1,173 +1,161 @@
-# ============================================
-# Conditional Statements in Python
-# ============================================
+# ==========================================================
+#           PYTHON STRINGS - COMPLETE PROGRAM
+# ==========================================================
 
-# --------------------------------------------
-# 1. IF Statement
-# --------------------------------------------
-
-# Definition:
-# if statement condition ko check karta hai.
-# Agar condition True ho to if block execute hota hai.
-
-print("========== IF Statement ==========")
-
-age = 20
-
-if age >= 18:
-    print("You are Eligible to Vote.")
-
-print()
-
-
-# --------------------------------------------
-# 2. IF - ELSE Statement
-# --------------------------------------------
+# ----------------------------------------------------------
+# 1. STRING
+# ----------------------------------------------------------
 
 # Definition:
-# if condition True ho to if block chalega.
-# Agar condition False ho to else block chalega.
+# String characters (letters, numbers, symbols) ka collection hoti hai.
+# String ko Single Quotes (' '), Double Quotes (" ")
+# ya Triple Quotes (""" """) ke andar likhte hain.
 
-print("========== IF ELSE Statement ==========")
+print("========== STRING ==========")
 
-age = 15
+name = "Python Programming"
 
-if age >= 18:
-    print("You are an Adult.")
-else:
-    print("You are a Minor.")
+print(name)
+print(type(name))
 
 print()
 
 
-# --------------------------------------------
-# 3. IF - ELIF - ELSE Statement
-# --------------------------------------------
+# ----------------------------------------------------------
+# 2. STRING INDEXING
+# ----------------------------------------------------------
 
 # Definition:
-# Jab multiple conditions check karni ho tab
-# elif use karte hain.
+# String ka har character ek position (Index) par hota hai.
+# Indexing 0 se start hoti hai.
 
-print("========== IF ELIF ELSE ==========")
+print("========== STRING INDEXING ==========")
 
-marks = 75
+print("First Character :", name[0])
 
-if marks >= 90:
-    print("Grade A")
+print("Second Character :", name[1])
 
-elif marks >= 75:
-    print("Grade B")
-
-elif marks >= 50:
-    print("Grade C")
-
-else:
-    print("Fail")
+print("Last Character :", name[-1])
 
 print()
 
 
-# --------------------------------------------
-# 4. Nested IF
-# --------------------------------------------
+# ----------------------------------------------------------
+# 3. STRING SLICING
+# ----------------------------------------------------------
 
 # Definition:
-# Jab ek if ke andar doosra if likhte hain
-# use Nested IF kehte hain.
+# String ka chhota part nikalna String Slicing kehlata hai.
+#
+# Syntax:
+# string[start:end]
 
-print("========== Nested IF ==========")
+print("========== STRING SLICING ==========")
 
-age = 20
-has_id = True
+print(name[0:6])
 
-if age >= 18:
+print(name[7:18])
 
-    if has_id:
-        print("Entry Allowed")
+print(name[:6])
 
-    else:
-        print("ID Required")
-
-else:
-    print("Age Less Than 18")
+print(name[7:])
 
 print()
 
 
-# --------------------------------------------
-# 5. Using AND Operator
-# --------------------------------------------
-
-print("========== AND Operator ==========")
-
-age = 20
-has_id = True
-
-if age >= 18 and has_id:
-    print("Entry Allowed")
-else:
-    print("Entry Not Allowed")
-
-print()
-
-
-# --------------------------------------------
-# 6. Ternary Operator
-# --------------------------------------------
+# ----------------------------------------------------------
+# 4. SLICING WITH SKIP VALUE
+# ----------------------------------------------------------
 
 # Definition:
-# One Line IF ELSE
+# Skip Value batati hai kitne characters
+# skip karke next character lena hai.
+#
+# Syntax:
+# string[start:end:step]
 
-print("========== Ternary Operator ==========")
+print("========== SLICING WITH SKIP VALUE ==========")
 
-age = 20
+print(name[0:18:2])
 
-status = "Adult" if age >= 18 else "Minor"
+print(name[0:18:3])
 
-print(status)
-
-print()
-
-
-# --------------------------------------------
-# 7. Student Example
-# --------------------------------------------
-
-print("========== Student Example ==========")
-
-age = int(input("Enter Your Age : "))
-
-if age >= 18:
-    print("Congratulations!")
-    print("You Can Vote.")
-
-else:
-    print("Sorry!")
-    print("You Cannot Vote.")
+print(name[::-1])
 
 print()
 
 
-# --------------------------------------------
-# 8. Grade Example
-# --------------------------------------------
+# ----------------------------------------------------------
+# 5. STRING FUNCTIONS
+# ----------------------------------------------------------
 
-print("========== Grade Example ==========")
+# Definition:
+# String Functions pre-defined methods hoti hain
+# jo string par alag-alag operations karti hain.
 
-marks = int(input("Enter Your Marks : "))
+print("========== STRING FUNCTIONS ==========")
 
-if marks >= 90:
-    print("Grade A")
+text = "python programming"
 
-elif marks >= 75:
-    print("Grade B")
+print("Original :", text)
 
-elif marks >= 50:
-    print("Grade C")
+print("Upper :", text.upper())
 
-else:
-    print("Fail")
+print("Lower :", text.lower())
+
+print("Title :", text.title())
+
+print("Capitalize :", text.capitalize())
+
+print("Replace :", text.replace("python", "Java"))
+
+print("Find :", text.find("programming"))
+
+print("Count :", text.count("m"))
+
+print("Length :", len(text))
+
+print("Strip :", "   Python   ".strip())
 
 print()
 
-print("Program Finished Successfully.")
+
+# ----------------------------------------------------------
+# 6. ESCAPE SEQUENCE CHARACTERS
+# ----------------------------------------------------------
+
+# Definition:
+# Escape Sequence Characters special characters hote hain
+# jo Backslash (\) se start hote hain.
+
+print("========== ESCAPE SEQUENCE ==========")
+
+print("Hello\nWorld")
+
+print("Python\tProgramming")
+
+print("My name is \"Rahul\"")
+
+
+print()
+
+
+# ----------------------------------------------------------
+# 7. USER INPUT EXAMPLE
+# ----------------------------------------------------------
+
+print("========== USER INPUT ==========")
+
+user = input("Enter Your Name : ")
+
+print("Hello", user)
+
+print("Upper :", user.upper())
+
+print("Lower :", user.lower())
+
+print("Length :", len(user))
+
+print()
+
+

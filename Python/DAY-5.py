@@ -1,159 +1,173 @@
-# ==========================================
-# WHILE LOOP - COMPLETE PROGRAM
-# ==========================================
+# ===================================================
+# LISTS & TUPLES IN PYTHON
+# ===================================================
 
-# ------------------------------------------
-# 1. Basic While Loop
-# ------------------------------------------
-
-# Definition:
-# while loop tab tak chalta hai
-# jab tak condition True hoti hai.
-
-# Count = Counter Variable ek variable hota hai jo loop kitni baar chala hai uska count rakhta hai.
-
-print("========== Basic While Loop ==========")
-
-count = 1
-
-while count <= 5:
-    print(count)
-    count += 1
-
-print()
-
-
-# ------------------------------------------
-# 2. Infinite Loop Example
-# ------------------------------------------
+# ---------------------------------------------------
+# 1. LIST
+# ---------------------------------------------------
 
 # Definition:
-# Agar counter update nahi hota
-# to loop kabhi khatam nahi hota.
-# Isse Infinite Loop kehte hain.
+# List ek collection hai jo multiple values
+# ko ek variable me store karti hai.
+# List Mutable hoti hai.
 
-print("========== Infinite Loop Example ==========")
+print("========== LIST ==========")
 
-print("Example Only (Don't Run)")
+fruits = ["Apple", "Banana", "Mango", "Orange"]
 
-# count = 1
+print(fruits)
 
-# while count <= 5:
-#     print(count)
-
-# count += 1 missing hai
-
+print(type(fruits))
 
 print()
 
 
-# ------------------------------------------
-# 3. User Password Example
-# ------------------------------------------
-
-print("========== Password Example ==========")
-
-password = ""
-
-while password != "1234":
-
-    password = input("Enter Password : ")
-
-print("Access Granted")
-
-print()
-
-
-# ------------------------------------------
-# 4. Sum of Numbers
-# ------------------------------------------
+# ---------------------------------------------------
+# 2. LIST INDEXING
+# ---------------------------------------------------
 
 # Definition:
-# total = Accumulator Variable total ko use karke
-# values ko add karte hain.
+# List ke har element ka ek Index hota hai.
 
-print("========== Sum Example ==========")
+print("========== LIST INDEXING ==========")
 
-total = 0
+print("First Fruit :", fruits[0])
 
-count = 1
+print("Second Fruit :", fruits[1])
 
-while count <= 5:
-
-    total = total + count
-
-    count += 1
-
-print("Sum =", total)
+print("Last Fruit :", fruits[-1])
 
 print()
 
 
-# ------------------------------------------
-# 5. while True + break
-# ------------------------------------------
+# ---------------------------------------------------
+# 3. LIST SLICING
+# ---------------------------------------------------
 
-# break = loop ko turant stop kar deta hai
+# Definition:
+# List ka chhota part nikalna List Slicing kehlata hai.
 
-print("========== while True Example ==========")
+print("========== LIST SLICING ==========")
 
-while True:
+print(fruits[0:2])
 
-    value = input("Enter Anything (type stop to exit): ")
+print(fruits[1:4])
 
-    if value == "stop":
-        break
+print(fruits[:3])
 
-    print("You Entered :", value)
-
-print("Loop Ended")
+print(fruits[2:])
 
 print()
 
 
-# ------------------------------------------
-# 6. Number Guessing Game
-# ------------------------------------------
+# ---------------------------------------------------
+# 4. LIST METHODS
+# ---------------------------------------------------
 
-print("========== Guessing Game ==========")
+# Definition:
+# List Methods list par operations karne ke liye
+# use hote hain.
 
-secret_number = 7
+print("========== LIST METHODS ==========")
 
-guess = int(input("Guess Number (1-10): "))
+numbers = [10, 40, 20, 30]
 
-attempt = 1
+print("Original :", numbers)
 
-while guess != secret_number:
+numbers.append(50)
+print("Append :", numbers)
 
-    print("Wrong Guess")
+numbers.insert(1, 15)
+print("Insert :", numbers)
 
-    guess = int(input("Try Again : "))
+numbers.remove(20)
+print("Remove :", numbers)
 
-    attempt += 1
+numbers.pop()
+print("Pop :", numbers)
 
-print("Correct!")
+numbers.sort()
+print("Sort :", numbers)
 
-print("Attempts :", attempt)
+numbers.reverse()
+print("Reverse :", numbers)
+
+print("Count :", numbers.count(40))
+
+print("Index :", numbers.index(30))
+
+numbers.clear()
+print("Clear :", numbers)
+
+print()
+
+
+# ---------------------------------------------------
+# 5. TUPLE
+# ---------------------------------------------------
+
+# Definition:
+# Tuple ek collection hai jo multiple values
+# store karta hai.
+# Tuple Immutable hota hai.
+
+print("========== TUPLE ==========")
+
+colors = ("Red", "Green", "Blue", "Yellow")
+
+print(colors)
+
+print(type(colors))
 
 print()
 
 
-# ------------------------------------------
-# 7. Table Program
-# ------------------------------------------
+# ---------------------------------------------------
+# 6. TUPLE INDEXING
+# ---------------------------------------------------
 
-print("========== Table Program ==========")
+print("========== TUPLE INDEXING ==========")
 
-num = int(input("Enter Number : "))
+print(colors[0])
 
-i = 1
+print(colors[2])
 
-while i <= 10:
-
-    print(num, "x", i, "=", num * i)
-
-    i += 1
+print(colors[-1])
 
 print()
 
-print("Program Finished Successfully.")
+
+# ---------------------------------------------------
+# 7. TUPLE METHODS
+# ---------------------------------------------------
+
+# Tuple me sirf 2 methods hote hain.
+
+print("========== TUPLE METHODS ==========")
+
+numbers = (10, 20, 30, 20, 40, 20)
+
+print("Count :", numbers.count(20))
+
+print("Index :", numbers.index(30))
+
+print()
+
+
+# ---------------------------------------------------
+# 8. USER INPUT EXAMPLE
+# ---------------------------------------------------
+
+print("========== USER INPUT ==========")
+
+name1 = input("Enter First Friend : ")
+
+name2 = input("Enter Second Friend : ")
+
+friend_list = [name1, name2]
+
+print(friend_list)
+
+print()
+
+print("Program Finished Successfully")
