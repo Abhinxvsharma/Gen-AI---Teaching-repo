@@ -6,15 +6,15 @@
 # # A Module is a file that contains pre-written Python code.
 # # We import modules when we want to use their functions.
 
-# import math
-# import keyword
+import math
+import keyword
 
-# print("========== MODULE EXAMPLE ==========")
+print("========== MODULE EXAMPLE ==========")
 
-# print("Square Root of 64 =", math.sqrt(64))
-# print("Value of PI =", math.pi)
+print("Square Root of 64 =", math.sqrt(64))
+print("Value of PI =", math.pi)
 
-# print()
+print()
 # # 
 
 # # -------------------------------------------------
@@ -33,9 +33,9 @@
 # # pip uninstall numpy
 # # pip list
 
-# print("========== PIP ==========")
-# print("PIP commands are executed in Terminal.")
-# print()
+print("========== PIP ==========")
+print("PIP commands are executed in Terminal.")
+print()
 
 
 # # -------------------------------------------------
@@ -46,12 +46,12 @@
 # # input() is used to take input from the user.
 # # By default, input() always returns data as a STRING.
 
-# print("========== INPUT FUNCTION ==========")
+print("========== INPUT FUNCTION ==========")
 
-# name = input("Enter Your Name : ")
-# age = input("Enter Your Age : ")
+name = input("Enter Your Name : ")
+age = input("Enter Your Age : ")
 
-# print()
+print()
 
 
 # # -------------------------------------------------
@@ -61,12 +61,12 @@
 # # Definition:
 # # type() tells us the data type of a variable.
 
-# print("========== TYPE FUNCTION ==========")
+print("========== TYPE FUNCTION ==========")
 
-# print(type(name))
-# print(type(age))
+print(type(name))
+print(type(age))
 
-# print()
+print()
 
 
 # # -------------------------------------------------
@@ -76,22 +76,22 @@
 # # Definition:
 # # Type Casting means converting one data type into another.
 
-# age = int(age)
+age = int(age)
 
-# print("========== TYPE CASTING ==========")
+print("========== TYPE CASTING ==========")
 
-# print(type(age))
+print(type(age))
 
-# height = float(input("Enter Your Height : "))
+height = float(input("Enter Your Height : "))
 
-# print(type(height))
+print(type(height))
 
-# number = str(100)
+number = str(100)
 
-# print(number)
-# print(type(number))
+print(number)
+print(type(number))
 
-# print()
+print()
 
 
 # # -------------------------------------------------
@@ -104,12 +104,12 @@
 
 # print("========== INDENTATION ==========")
 
-# if age >= 18:
-#     print(name, "is Eligible to Vote")
-# else:
-#     print(name, "is Not Eligible to Vote")
+if age >= 18:
+    print(name, "is Eligible to Vote")
+else:
+    print(name, "is Not Eligible to Vote")
 
-# print()
+print()
 
 
 # -------------------------------------------------
@@ -121,11 +121,11 @@
 # They already have special meanings.
 # We cannot use them as variable names.
 
-# print("========== PYTHON KEYWORDS ==========")
+print("========== PYTHON KEYWORDS ==========")
 
-# print(keyword.kwlist)
+print(keyword.kwlist)
 
-# print()
+print()
 
 
 # -------------------------------------------------
@@ -134,13 +134,13 @@
 
 # print("========== STUDENT DETAILS ==========")
 
-# print("Name :", name)
-# print("Age :", age)
-# print("Height :", height)
+print("Name :", name)
+print("Age :", age)
+print("Height :", height)
 
-# print()
+print()
 
-# print("Program Finished Successfully.")
+print("Program Finished Successfully.")
 
 
 

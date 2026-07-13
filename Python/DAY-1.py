@@ -2,10 +2,10 @@
 # 1. Hello World
 # ----------------------------
 
-# print("Hello, World!")
+print("Hello, World!")
 
-# # Apna naam print karo
-# print("Mera naam Abhinav hai")
+# print your name
+print("my name is Abhinav")
 
 
 # ----------------------------
@@ -30,22 +30,22 @@ print(type(is_student))
 # ==========================
 
 # String (Text)
-# name = "Abhinav"
+name = "Abhinav, ola"
 
-# # Integer (Whole Number)
-# age = 24
+# Integer (Whole Number)
+age = 24
 
-# # Float (Decimal Number)
-# height = 6.2
+# Float (Decimal Number)
+height = 6.2
 
-# # Boolean (True/False)
-# is_student = True
+# Boolean (True/False)
+is_student = True
 
-# # Print Values
-# print(name)
-# print(age)
-# print(height)
-# print(is_student)
+# Print Values
+print(name)
+print(age)
+print(height)
+print(is_student)
 
 
 
