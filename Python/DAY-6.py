@@ -126,7 +126,7 @@ print("========== USER INPUT ==========")
 
 name = input("Enter Name : ")
 
-age = input("Enter Age : ")
+age = int(input("Enter Age : "))
 
 student = {
     "Name":name,
