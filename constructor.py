@@ -24,3 +24,20 @@ class BankAccount:
 account1 = BankAccount("Abhinav", "12345")
 
 account1.show_details()
+
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+
+# Creating an object
+s1 = Student("Rahul", 20)
+
+# Calling method
+s1.display()
